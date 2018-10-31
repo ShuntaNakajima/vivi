@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="Mycell" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="DownloadingTableViewCell" customModule="vivi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rxQ-T7-ytZ">
+                        <rect key="frame" x="8" y="46" width="304" height="2"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-VA-NG6">
+                        <rect key="frame" x="8" y="17" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0MG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQa-DF-Kzo">
+                        <rect key="frame" x="274" y="56" width="38" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSf-gB-Y1e">
+                        <rect key="frame" x="250" y="56" width="6" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQL-aL-brv">
+                        <rect key="frame" x="8.5" y="56" width="124" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="124" id="GZt-zS-w3A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0MG" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97O-bx-OTE">
+                        <rect key="frame" x="174" y="56" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="Ujy-2l-edC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rxQ-T7-ytZ" firstAttribute="top" secondItem="bdf-VA-NG6" secondAttribute="bottom" constant="8" id="3QY-ih-NHd"/>
+                    <constraint firstItem="oQa-DF-Kzo" firstAttribute="leading" secondItem="PSf-gB-Y1e" secondAttribute="trailing" constant="18" id="4Qy-Ib-6x8"/>
+                    <constraint firstItem="qQL-aL-brv" firstAttribute="top" secondItem="rxQ-T7-ytZ" secondAttribute="bottom" constant="8" id="Ene-Zb-hLv"/>
+                    <constraint firstItem="97O-bx-OTE" firstAttribute="leading" secondItem="qQL-aL-brv" secondAttribute="trailing" constant="41.5" id="Gpt-g0-r6B"/>
+                    <constraint firstItem="rxQ-T7-ytZ" firstAttribute="top" secondItem="bdf-VA-NG6" secondAttribute="bottom" constant="8" id="Jsb-Hz-14g"/>
+                    <constraint firstItem="oQa-DF-Kzo" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Mtz-AM-dJc"/>
+                    <constraint firstItem="bdf-VA-NG6" firstAttribute="trailing" secondItem="rxQ-T7-ytZ" secondAttribute="trailing" id="NGr-SK-meb"/>
+                    <constraint firstItem="PSf-gB-Y1e" firstAttribute="baseline" secondItem="oQa-DF-Kzo" secondAttribute="baseline" id="OXA-NY-7WA"/>
+                    <constraint firstItem="rxQ-T7-ytZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ROL-KZ-m25"/>
+                    <constraint firstItem="oQa-DF-Kzo" firstAttribute="leading" secondItem="PSf-gB-Y1e" secondAttribute="trailing" constant="18" id="WmS-OC-MNq"/>
+                    <constraint firstItem="PSf-gB-Y1e" firstAttribute="baseline" secondItem="97O-bx-OTE" secondAttribute="baseline" id="YY5-DP-qoy"/>
+                    <constraint firstItem="bdf-VA-NG6" firstAttribute="leading" secondItem="rxQ-T7-ytZ" secondAttribute="leading" id="dIN-Gk-Ehv"/>
+                    <constraint firstItem="PSf-gB-Y1e" firstAttribute="leading" secondItem="97O-bx-OTE" secondAttribute="trailing" constant="8" id="dYW-aJ-tGZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qQL-aL-brv" secondAttribute="bottom" constant="0.5" id="dmf-qZ-Im8"/>
+                    <constraint firstItem="97O-bx-OTE" firstAttribute="top" secondItem="rxQ-T7-ytZ" secondAttribute="bottom" constant="8" id="e6A-uo-nnw"/>
+                    <constraint firstItem="bdf-VA-NG6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="oMo-yg-D8C"/>
+                    <constraint firstItem="rxQ-T7-ytZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="yb9-L5-Onz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="downloadingUrlLabel" destination="qQL-aL-brv" id="jZR-o9-7JQ"/>
+                <outlet property="maxsizeLabel" destination="oQa-DF-Kzo" id="4KL-Rm-8Ps"/>
+                <outlet property="mixsizeLabel" destination="97O-bx-OTE" id="ubA-4c-7LU"/>
+                <outlet property="progressView" destination="rxQ-T7-ytZ" id="JbR-EI-zO4"/>
+                <outlet property="titleLabel" destination="bdf-VA-NG6" id="H7u-z0-F8Q"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="38"/>
+        </tableViewCell>
+    </objects>
+</document>

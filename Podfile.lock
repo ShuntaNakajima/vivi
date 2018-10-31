@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.5.1)
+  - FileKit (5.0.0)
+  - Ji (2.1.0):
+    - Ji/Ji (= 2.1.0)
+  - Ji/Ji (2.1.0):
+    - Ji/Ji-libxml
+  - Ji/Ji-libxml (2.1.0)
+  - Kanna (2.0.0)
+  - ReachabilitySwift (4.1.0)
+  - YoutubeSourceParserKit (0.2.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - FileKit (~> 5.0.0)
+  - Ji (~> 2.1.0)
+  - Kanna (~> 2.0.0)
+  - ReachabilitySwift
+  - YoutubeSourceParserKit (from `https://github.com/lennet/YoutubeSourceParserKit`, branch `master`)
+
+EXTERNAL SOURCES:
+  YoutubeSourceParserKit:
+    :branch: master
+    :git: https://github.com/lennet/YoutubeSourceParserKit
+
+CHECKOUT OPTIONS:
+  YoutubeSourceParserKit:
+    :commit: 98f3bcf9886c20eefd82249a6cfbb3068ad86b80
+    :git: https://github.com/lennet/YoutubeSourceParserKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  FileKit: 857f5f9d2583044c1354e7564b110d80f31405e8
+  Ji: 21946da4e13425485ddd424edfaeeced0d80ad28
+  Kanna: 9a6637f72f5c77fe9c045b1efb2a5bb074754af8
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  YoutubeSourceParserKit: d1506222a62718ed41f18ab52ebbc1b1d9ecabcc
+
+PODFILE CHECKSUM: eae85aee63c44dff9562e583820c3f0f58702ce4
+
+COCOAPODS: 1.1.1
